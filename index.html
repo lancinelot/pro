@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immobilier</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="Votre Logo"></a>
+            </div>
+            <nav>
+                <ul id="navLinks">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#properties">Propriétés</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Témoignages</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="C:/Users/Admin/Music/realstat/video.html">Vidéothèque</a></li>
+                </ul>
+            </nav>
+            <a href="https://forms.visme.co/formsPlayer/jwoo1xqq-secure-login" class="cta">Contactez-nous</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="home">
+        <div class="hero-section">
+            <div class="hero-content">
+                <div>
+                    <h1>Trouvez la maison de vos rêves</h1>
+                </div>
+                <p>Propriétés de luxe dans les meilleurs emplacements</p>
+
+                <!-- <div class="search-bar">
+                <input type="text" placeholder="Emplacement">
+                <input type="text" placeholder="Type de propriété">
+                <input type="text" placeholder="Gamme de prix">
+                <button>Rechercher</button>
+
+            </div>-->
+
+            </div>
+            <div class="scrolling-images">
+                <img src="images\new7.jpg" alt="Image 1">
+                <img src="images\new6.jpg" alt="Image 2">
+                <img src="images\salon.jpg" alt="Image 3">
+                <img src="images\nous1.jpg" alt="Image 4">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="properties">
+        <section class="featured-properties">
+            <h2>Propriétés en Vedette</h2>
+            <div class="property-carousel" id="carousel1">
+                <button class="scroll-btn left" onclick="scrollLeft('carousel1')">&lt;</button>
+                <div class="property-cards">
+                    <div class="property-card">
+                        <div class="en-vente-tag">En vente</div>
+                        <img src="images/locA.jpg" alt="Propriété 1">
+                        <div class="property-info">
+                            <h3>🌍 LOCATION APPARTEMENT <br> 📍 <span class="location">COCODY CARNEBIÈRE, IMMEUBLE SANTA MARIA</span></h3>
+                            <p>F4 (4 pièces) de bon standing, rez-de-chaussée</p>
+                            <p>Ascenseur, Piscine</p>
+                            <p class="price">LOYER : 2.000.000 F <small>(négociable)</small></p>
+                            <p><strong>NB :</strong> + 135.000 F (Charges Copropriété)</p>
+                            <a href="C:/Users/Admin/Music/realstat/voir5.html" class="voir-plus-btn">Details</a>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="en-vente-tag">En vente</div>
+                        <img src="images/apartM1.jpg" alt="Propriété 2">
+                        <div class="property-info">
+                            <h3>🌍 APPARTEMENT MEUBLÉ T3 ✨Tout nouveau✨ <br> 📍 <span class="location">Les 10 Tours du Golf . Tour Chari RDC</span></h3>
+                            <p>2 chambres,2 douches entières pour chaque chambre
+                            </p>
+                            <p class="price">Prix : 80.000F</p>
+                            <a href="C:/Users/Admin/Music/realstat/voir4.html" class="voir-plus-btn">Details</a>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="en-vente-tag">En vente</div>
+                        <img src="images/apartM.jpg" alt="Propriété 3">
+                        <div class="property-info">
+                            <h3>🌍 LOCATION SAISONNIÈRE <br> 📍 <span class="location">RIVIERA M'BADON</span></h3>
+                            <p>À côté de la Pharmacie Belle Fortune et de l'Ambassade de Chine</p>
+                            <p> 02 Chambres autonomes,03 TVs Smart (Salon et chambres)
+                            </p>
+                            <p class="price">Prix : 90.000F/nuitée négociable</p>
+                            <a href="C:/Users/Admin/Music/realstat/voir3.html" class="voir-plus-btn">Details</a>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="en-location-tag">En location</div>
+                        <img src="images\WhatsApp Image 2024-08-15 at 20.53.44_467cdbd0.jpg" alt="Villa Meublée">
+                        <div class="property-info">
+                            <h3>🌍 Villa Meublée - Triplex de Haut Standing <br> 📍 <span class="location">Abatta Derrière les Impôts</span></h3>
+                            <p>10 pièces, Piscine, Jacuzzi</p>
+                            <p class="price">Prix de la location: 2 000 000 FCFA (négociable)</p>
+                            <a href="C:/Users/Admin/Music/realstat/voir.html" class="voir-plus-btn">Details</a>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="en-vente-tag">En vente</div>
+                        <img src="images\i2.jpg " alt="Appartement Marcory ">
+                        <div class="property-info ">
+                            <h3>🌍 Appartement 4 Pièces - Marcory Zone 4 <br> 📍 <span class="location ">Rue Louis Lumière</span></h3>
+                            <p>À proximité de Restaurant Kuzer et Casino</p>
+                            <p>Superficie: 135m²</p>
+                            <p class="price ">Prix: 200,000,000 XOF avec meubles, 185,000,000 XOF sans meubles</p>
+                            <a href="C:/Users/Admin/Music/realstat/voir6.html" class="voir-plus-btn ">Details</a>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="en-location-tag">En location</div>
+                        <img src="images\k1.jpg" alt="Villa Duplex Riviera 2">
+                        <div class="property-info">
+                            <h3>🌍 Villa Duplex - 6 Pièces <br> 📍 <span class="location">Riviera 2, Sainte Famille</span></h3>
+                            <p>Dans une cité, Zone de l’église Sainte Famille</p>
+                            <p>Villa de 6 pièces avec cour et jardin, idéale pour bureaux ou habitation</p>
+                            <p class="price">Loyer: 1.8 Millions FCFA (négociable)</p>
+                            <a href="file:///C:/Users/Admin/Music/realstat/voir7.html" class="voir-plus-btn">Details</a>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="en-vente-tag">En vente</div>
+                        <img src="images\envente.jpg" alt="Appartement Marcory">
+                        <div class="property-info">
+                            <h3>🌍 Appartement 4 Pièces - Marcory Zone 4 <br> 📍 <span class="location">Rue Louis Lumière</span></h3>
+                            <p>Dans un immeuble neuf avec piscine, salle de sport, et bar à café.</p>
+                            <p>Situé au 7ème étage avec une belle vue sur la ville et lagune.</p>
+                            <p>Superficie: 135m² | Document: CMPF</p>
+                            <p class="price">Prix: 200,000,000 XOF avec meubles, 185,000,000 XOF sans meubles</p>
+                            <a href="C:/Users/Admin/Music/realstat/voir8.html " class="voir-plus-btn ">Details</a>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="en-vente-tag">En vente</div>
+                        <img src="images\actu2.jpg " alt="Immeuble Riviera 3 Hibiscus ">
+                        <div class="property-info ">
+                            <h3>🌍 Immeuble Inachevé R+4 - Riviera 3 Hibiscus <br> 📍 <span class="location ">Riviera 3 Hibiscus</span></h3>
+                            <p>Superficie: 800 m² | Document: CPF</p>
+                            <p>Composé de 16 appartements de 3 pièces et 2 penthouses de 4 pièces, avec chambres autonomes.</p>
+                            <p class="price ">Prix de vente: 580 millions FCFA</p>
+                            <p>NB: Marché direct</p>
+                            <a href="C:/Users/Admin/Music/realstat/voir9.html" class="voir-plus-btn ">Details</a>
+                        </div>
+                    </div>
+
+
+                    <div class="property-card ">
+                        <div class="en-vente-tag ">En vente</div>
+                        <img src="images/villa.jpg " alt="Propriété 4 ">
+                        <div class="property-info ">
+                            <h3>🌍 EN VENTE <br> 📍 <span class="location ">RIVIERA4 MBADON ZONE AMBASSADE DE CHINE</span></h3>
+                            <p>7 CHAMBRES AUTONOMES,1 PISCINE
+
+                            </p>
+                            <p class="price ">PRIX DE VENTE: 1,1 Milliards F CFA </p>
+                            <a href="C:/Users/Admin/Music/realstat/voir2.html " class="voir-plus-btn ">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-btn right " onclick="scrollRight( 'carousel1') ">&gt;</button>
+            </div>
+            <a href="C:/Users/Admin/Music/realstat/voirtout.html">
+                <button class="view-more">Voir Plus de propriétés</button>
+            </a>
+        </section>
+    </section>
+
+
+    <section class="featured-properties ">
+        <h2>Terrains en Vedette</h2>
+        <div class="property-carousel " id="carousel2 ">
+            <button class="scroll-btn left " onclick="scrollLeft( 'carousel2') ">&lt;</button>
+            <div class="property-cards ">
+                <div class="property-card ">
+                    <div class="en-vente-tag ">En vente</div>
+                    <img src="images/terrain1.jpg " alt="Propriété 1 ">
+                    <div class="property-infofeat ">
+                        <h3>Terrain à Vendre</h3>
+                        <div class="details ">
+                            <p class="location ">Zone de Mpouto</p>
+                            <p class="size ">Superficie: 1042 m²</p>
+                            <p class="price ">Prix: 300 millions FCFA <span class="note ">(à débattre)</span></p>
+                            <p class="document ">Document: ACD</p>
+                        </div>
+                        <a href="# " class="voir-plus-btn ">Details</a>
+                    </div>
+                </div>
+                <div class="property-card ">
+                    <div class="en-vente-tag ">En vente</div>
+                    <img src="images/actu1.jpg " alt="Propriété 2 ">
+                    <div class="property-infof ">
+                        <h3>Terrain à Vendre - ANGRE</h3>
+                        <div class="details ">
+                            <p class="location ">Djorobite 1, non loin du carrefour « docteur »</p>
+                            <p class="size ">Superficie: 4900 m²</p>
+                            <p class="price ">Prix: 250 000 FCFA / m² <span class="note ">(Total: 1 225 000 000 FCFA)</span></p>
+                            <p class="document ">Document: ACD</p>
+                        </div>
+                        <a href="C:/Users/Admin/Music/realstat/voir1.html " class="voir-plus-btn ">Details</a>
+                    </div>
+                </div>
+
+
+                <div class="property-card ">
+                    <div class="en-vente-tag ">En vente</div>
+                    <img src="images/actu3.jpg " alt="Propriété 3 ">
+                    <div class="property-infof ">
+                        <h3>Terrain à Vendre</h3>
+                        <div class="details ">
+                            <p class="location ">Après Djibi, côté gauche juste après le ravin</p>
+                            <p class="size ">Superficie: 300 à 350 m²</p>
+                            <p class="price ">Prix: 8 millions FCFA</p>
+                            <p class="document ">Document: ACD en cours <span class="note ">(dossier bien avancé)</span></p>
+                            <p class="commission ">Commission: 10%</p>
+                        </div>
+                        <a href="# " class="voir-plus-btn ">Details</a>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-btn right " onclick="scrollRight( 'carousel2') ">&gt;</button>
+        </div>
+        <a href="realstat/voir.html " class="link-wrapper ">
+            <button class="view-more ">Voir Plus de propriétés</button>
+        </a>
+    </section>
+
+
+    <section>
+        <h1>Matériaux de Construction en Vedette & Travaux de Cours</h1>
+
+        <div class="scrolling-images2 ">
+            <img src="images\a13.jpg " alt="Image 1 ">
+            <img src="images\t1.jpg " alt="Image 2 ">
+            <img src="images\a9.jpg " alt="Image 2 ">
+            <img src="images\a7 (2).jpg " alt="Image 3 ">
+            <img src="images\t3.jpg " alt="Image 3 ">
+            <img src="images\a4.jpg " alt="Image 4 ">
+            <img src="images\A1 (2).jpg " alt="Image 4 ">
+        </div>
+    </section>
+    </section>
+    <section id="about ">
+        <section class="about-us ">
+            <div class="container ">
+                <div class="about-image ">
+                    <img src="images\nous1.jpg " alt="À propos de nous ">
+                </div>
+                <div class="about-content ">
+                    <h2>À propos de nous</h2>
+                    <p>
+                        Bienvenue chez GUI , votre partenaire de confiance pour trouver la maison de vos rêves. Nous sommes spécialisés dans les propriétés de luxe situées dans les meilleurs emplacements. Notre mission est de vous offrir un service personnalisé et de haute qualité
+                        pour répondre à vos besoins immobiliers.
+                    </p>
+                    <p>
+                        Notre équipe d'experts est dédiée à vous accompagner tout au long de votre parcours immobilier, que vous cherchiez à acheter, vendre ou louer une propriété. Avec des années d'expérience et une connaissance approfondie du marché, nous nous engageons à
+                        vous fournir les meilleures options et conseils.
+                    </p>
+                    <a href="#contact " class="learn-more ">
+                        <span class="button-text ">En Savoir Plus</span>
+                        <span class="button-icon ">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="services ">
+            <section class="our-services ">
+                <h2>Nos Services</h2>
+                <div class="container ">
+
+                    <div class="service-cards ">
+                        <div class="service-card ">
+                            <img src=img\vent.jpg alt="Achat ">
+                            <h3>Achat</h3>
+                            <p>Nous vous aidons à trouver et acheter la maison de vos rêves.</p>
+                        </div>
+                        <div class="service-card ">
+                            <img src="img\achat.jpg " alt="Vente ">
+                            <h3>Vente</h3>
+                            <p>Vendez votre propriété rapidement et au meilleur prix avec notre aide.</p>
+                        </div>
+                        <div class="service-card ">
+                            <img src="img\location.jpeg " alt="Location ">
+                            <h3>Location</h3>
+                            <p>Trouvez la location parfaite pour vous et votre famille.</p>
+                        </div>
+                        <div class="service-card ">
+                            <img src="img\gestion.png " alt="Gestion de Propriété ">
+                            <h3>Gestion de Propriété</h3>
+                            <p>Nous prenons soin de votre propriété et vous offrons une gestion complète.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="services "></section>
+            <section class="why-choose-us ">
+                <h2>Pourquoi nous choisir</h2>
+                <div class="container ">
+
+                    <div class="reasons ">
+                        <div class="reason ">
+                            <img src="images\logo.png " alt="Agents Experts ">
+                            <h3>Agents Experts</h3>
+                            <p>Nos agents sont des experts qualifiés avec une connaissance approfondie du marché immobilier.</p>
+                        </div>
+                        <div class="reason ">
+                            <img src="img\icon-search.png " alt="Propriétés Vérifiées ">
+                            <h3>Propriétés Vérifiées</h3>
+                            <p>Toutes nos propriétés sont soigneusement vérifiées pour garantir leur qualité et légitimité.</p>
+                        </div>
+                        <div class="reason ">
+                            <img src="img\icon-deal.png " alt="Support Client ">
+                            <h3>Support Client</h3>
+                            <p>Nous offrons un support client exceptionnel pour vous accompagner à chaque étape.</p>
+                        </div>
+                        <div class="reason ">
+                            <img src="img\icon-house.png " alt="Prix Abordables ">
+                            <h3>Prix Abordables</h3>
+                            <p>Nous proposons des propriétés à des prix compétitifs pour s'adapter à votre budget.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials ">
+                <section class="testimonials ">
+                    <h2>Témoignages</h2>
+                    <div class="container ">
+
+                        <div class="testimonials-cards ">
+                            <div class="testimonial-card ">
+                                <p>"L 'équipe de Immobilier de Rêve a été incroyable. Grâce à eux, nous avons trouvé notre maison idéale en un rien de temps."</p>
+                                <h3>MR.KONE ALI</h3>
+                                <p>Client satisfait</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <p>"Un service exceptionnel et des agents très professionnels. Je recommande vivement Immobilier de Rêve."</p>
+                                <h3>Mme.Marie Martin</h3>
+                                <p>Cliente satisfaite</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <p>"La meilleure expérience immobilière que j'ai jamais eue. Ils ont rendu l 'achat de notre maison si simple et agréable."</p>
+                                <h3>MR Paul Lambert</h3>
+                                <p>Client satisfait</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="blog">
+                    <section class="blog-news">
+                        <h2>Blog & Actualités</h2>
+                        <div class="articles">
+                            <article class="article-card">
+                                <img src="img\tend.jpg" alt="Article 1">
+                                <div class="article-info">
+                                    <h3 style="color: #4CAF50;">Les tendances du marché immobilier en 2024</h3>
+                                    <p>
+                                        Découvrez les dernières tendances et prévisions pour le marché immobilier cette année.
+                                        <span id="dots" style="color: #4CAF50;">...</span>
+                                        <span id="more" style="display: none; color: #4CAF50;">
+                                            En 2024, le marché immobilier connaît plusieurs évolutions majeures. Les tendances incluent une demande croissante pour les logements durables et écoénergétiques, ainsi qu'une montée des prix dans les grandes
+                            villes en raison de la rareté des terrains disponibles. Les investisseurs doivent également prêter attention aux nouvelles régulations et aux changements dans les politiques de financement qui pourraient influencer le marché immobilier.
+                            </span>
+                                    </p>
+
+                                    <div class="read-more-container">
+                                        <button onclick="myFunction()" id="myBtn" style="color: #4CAF50;">Lire plus</button>
+                                    </div>
+                                </div>
+
+                            </article>
+                            <article class="article-card">
+                                <img src="img\preparer.jpg" alt="Article 2">
+                                <div class="article-info">
+                                    <h3 style="color: #4CAF50;">Comment préparer votre maison pour la vente</h3>
+                                    <p>
+                                        Des conseils utiles pour préparer votre maison avant de la mettre en vente.
+                                        <span id="dots2" style="color: #4CAF50;">...</span>
+                                        <span id="more2" style="display: none; color: #47aed6;">
+                                            Préparer votre maison pour la vente implique plusieurs étapes importantes. 
+                                            Assurez-vous que la maison est propre, bien rangée et présentée sous son meilleur jour. 
+                                            Effectuez les réparations nécessaires et envisagez de faire appel à un professionnel pour une évaluation. 
+                                            Un bon entretien et une présentation soignée peuvent considérablement améliorer l'attrait de votre maison pour les acheteurs potentiels.
+                                        </span>
+                                    </p>
+
+                                    <div class="read-more-container">
+                                        <a href="#" class="read-more-link" onclick="toggleReadMore('dots2', 'more2', this); return false;">Lire la suite</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <img src="img\invest.jpeg" alt="Article 3">
+                                <div class="article-info">
+                                    <h3>Les avantages d'investir dans l'immobilier de luxe</h3>
+                                    <p>
+                                        Explorez les avantages et les opportunités d'investir dans des propriétés de luxe.
+                                        <span id="dots3">...</span>
+                                        <span id="more3" style="display: none; color: #4CAF50;">
+                                            Investir dans l'immobilier de luxe permet une valorisation stable du capital et des revenus locatifs élevés. 
+                                            C'est une bonne protection contre l'inflation et diversifie un portefeuille d'investissements. 
+                                            De plus, ces propriétés offrent un certain prestige et des avantages fiscaux potentiels.
+                                        </span>
+                                    </p>
+
+                                    <div class="read-more-container">
+                                        <button onclick="toggleReadMore('dots3', 'more3', this);" id="myBtn3">Lire plus</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section id="contact">
+                        <section class="contact-us ">
+                            <div class="container ">
+                                <h2>Contactez-nous</h2>
+                                <div class="contact-info ">
+                                    <div class="contact-item ">
+                                        <h3>Adresse</h3>
+                                        <p>25, 25 BP 1091 Abidjan, Abidjan,<br> Côte d’Ivoire</p>
+                                    </div>
+                                    <div class="contact-item ">
+                                        <h3>Téléphone</h3>
+                                        <p>+225 07 98 70 51 31</p>
+                                    </div>
+                                    <div class="contact-item ">
+                                        <h3>Email</h3>
+                                        <p>Universgroupe2014@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-form">
+                                    <h3>Envoyez-nous un message</h3>
+                                    <form action="https://formsubmit.co/Universgroupe2014@gmail.com" method="POST">
+                                        <input type="text" name="name" placeholder="Nom" required>
+                                        <input type="email" name="email" placeholder="Email" required>
+                                        <input type="tel" name="phone" placeholder="Téléphone">
+                                        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                                        <button class="w3-button w3-black" type="submit"><i class="fa fa-paper-plane"></i> Envoyer le message</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </section>
+                    </section>
+                </section>
+                <footer>
+                    <div class="footer-container">
+                        <div class="footer-info">
+                            <ul class="contact-list">
+                                <li>
+                                    <a href="#" class="contact-link">
+                                        <ion-icon name="location-outline"></ion-icon>
+                                        <address>25, 25 BP 1091 Abidjan, Abidjan,<br> Côte d’Ivoire</address>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+0123456789" class="contact-link">
+                                        <ion-icon name="call-outline"></ion-icon>
+                                        <span>
+                                            <ul>
+                                                <li>+225 27 22 43 07 94</li>
+                                                <li>+225 07 08 45 43 42</li>
+                                                <li>+225 07 98 70 51 31</li>
+                                            </ul>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:contact@homeverse.com" class="contact-link">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <span>Universgroupe2014@gmail.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-map">
+                            <h3>Nous trouver</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3972.4438881761585!2d-3.983655625016357!3d5.349018594629658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMjAnNTYuNSJOIDPCsDU4JzUxLjkiVw!5e0!3m2!1sen!2sin!4v1719565726579!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="footer-social-media">
+                        <h3>Suivez-nous</h3>
+                        <ul class="social-media-list">
+                            <li>
+                                <a href="https://www.facebook.com/your-page" target="_blank" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/your-profile" target="_blank" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/your-profile" target="_blank" class="social-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/your-profile" target="_blank" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/yourphonenumber" target="_blank" class="social-link">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Immobilier de Rêve. Tous droits réservés.</p>
+                    </div>
+                </footer>
+
+                <script src="script.js "></script>
+</body>
+
+</html>

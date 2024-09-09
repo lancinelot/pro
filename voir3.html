@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appartement Meublé à la Riviera M'Badon - Notre Propriété</title>
+    <style>
+         :root {
+            --primary-color: #3a6ea5;
+            --secondary-color: #004e98;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .property-details {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .property-details h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .feature {
+            background-color: #e9f0f7;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-top: 1rem;
+        }
+        
+        .go-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .go-back:hover {
+            background-color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bel Appartement Meublé à la Riviera M'Badon</h1>
+    </header>
+
+    <div class="container">
+        <div class="property-details">
+            <h2>Aperçu de la Propriété</h2>
+            <p>LOCATION SAISONNIÈRE</p>
+            <p>📍 RIVIERA M'BADON À CÔTÉ DE LA PHARMACIE BELLE FORTUNE ET DE L'AMBASSADE DE CHINE</p>
+            <p>UN Bel Appartement meublé de 3 pièces situé au 1er étage dans un immeuble de bon standing</p>
+
+            <h3>Caractéristiques :</h3>
+            <div class="features">
+                <div class="feature">
+                    <ul>
+                        <li>02 Chambres autonomes</li>
+                        <li>01 Grand séjour avec 2 Balcons</li>
+                        <li>Toilette visiteur</li>
+                        <li>01 Cuisine euros équipée</li>
+                        <li>01 Buanderie avec Machine à laver</li>
+                        <li>03 TVs Smart (Salon et chambres)</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <ul>
+                        <li>Internet wifi fibre optique</li>
+                        <li>Nespresso</li>
+                        <li>Ménage 2 fois/semaine</li>
+                        <li>Parking interne et externe</li>
+                        <li>Sécurité H24</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="price">
+                Prix : 90.000F/nuitée négociable
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.51.42_730a864f.jpg " alt="Image de l 'appartement 7" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.51.40_140dc60a.jpg" alt="Image de l'appartement 1" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.51.40_bedcfc01.jpg" alt="Image de l'appartement 2" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.51.39_606677df.jpg" alt="Image de l'appartement 3" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.51.41_3f397e72.jpg" alt="Image de l'appartement 4" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.51.39_606677df.jpg" alt="Image de l'appartement 5" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.51.38_5c71b5a2.jpg" alt="Image de l'appartement 6" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.51.42_730a864f.jpg " alt="Image de l 'appartement 7" onclick="openModal(this)">
+
+        </div>
+
+        <a href="javascript:history.back() " class="go-back ">Retour</a>
+    </div>
+
+    <div id="modal01 " class="modal " onclick="this.style.display='none' ">
+        <span class="close " onclick="closeModal() ">&times;</span>
+        <img id="img01 " alt=" " class="modal-content ">
+        <p id="caption " class="caption "></p>
+    </div>
+
+    <script>
+        function openModal(element) {
+            document.getElementById("modal01 ").style.display = "block ";
+            document.getElementById("img01 ").src = element.src;
+            document.getElementById("caption ").innerHTML = element.alt;
+        }
+
+        function closeModal() {
+            document.getElementById("modal01 ").style.display = "none ";
+        }
+    </script>
+</body>
+
+</html>

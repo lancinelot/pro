@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somptueuse Villa à la Riviera4 - Notre Propriété</title>
+    <style>
+         :root {
+            --primary-color: #3a6ea5;
+            --secondary-color: #004e98;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .property-details {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .property-details h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .feature {
+            background-color: #e9f0f7;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-top: 1rem;
+        }
+        
+        .go-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .go-back:hover {
+            background-color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Somptueuse Villa à la Riviera4</h1>
+    </header>
+
+    <div class="container">
+        <div class="property-details">
+            <h2>Aperçu de la Propriété</h2>
+            <p>EN VENTE RIVIERA4 MBADON ZONE AMBASSADE DE CHINE SOMPTUEUSE VILLA AUX FINITIONS MODERNES BÂTIE SUR UN TERRAIN DE 1200 m2 ET 600m2 HABITABLE, EST LA VILLA DE RÊVE POUR TOUT ACQUÉREUR.</p>
+
+            <h3>Caractéristiques :</h3>
+            <div class="features">
+                <div class="feature">
+                    <ul>
+                        <li>7 chambres autonomes</li>
+                        <li>1 bureau</li>
+                        <li>1 cuisine américaine</li>
+                        <li>2 séjours</li>
+                        <li>1 salle à manger</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <ul>
+                        <li>1 jardin</li>
+                        <li>1 piscine</li>
+                        <li>2 garages de 6 voitures</li>
+                        <li>Dépendances</li>
+                        <li>Buanderies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="price">
+                Prix de vente: 1,1 Milliards F CFA
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images\villa.jpg" alt="Image de la propriété 1" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.53.25_4172ce03.jpg" alt="Image de la propriété 2" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.53.26_b47cf2fe.jpg" alt="Image de la propriété 3" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.53.26_7856ebe1.jpg" alt="Image de la propriété 4" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.53.26_338d4385.jpg" alt="Image de la propriété 5" onclick="openModal(this)">
+            <img src="images\WhatsApp Image 2024-08-15 at 20.53.27_355703e1.jpg" alt="Image de la propriété 6" onclick="openModal(this)">
+            <img src="images\villa.jpg" alt="Image de la propriété 7" onclick="openModal(this)">
+
+        </div>
+
+        <a href="javascript:history.back()" class="go-back">Retour</a>
+    </div>
+
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="img01" alt="" class="modal-content">
+        <p id="caption" class="caption"></p>
+    </div>
+
+    <script>
+        function openModal(element) {
+            document.getElementById("modal01").style.display = "block";
+            document.getElementById("img01").src = element.src;
+            document.getElementById("caption").innerHTML = element.alt;
+        }
+
+        function closeModal() {
+            document.getElementById("modal01").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
